@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "MSComercial": {
+    "GlobalLoggingErrorHandling": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "swagger",
@@ -8,7 +8,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
       "dotnetRunMessages": true,
-      "applicationUrl": "https://localhost:7265;http://localhost:5171"
+      "applicationUrl": "https://localhost:7102;http://localhost:5228"
     },
     "IIS Express": {
       "commandName": "IISExpress",
@@ -22,6 +22,9 @@
       "commandName": "Docker",
       "launchBrowser": true,
       "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger",
+      "environmentVariables": {
+        "ASPNETCORE_URLS": "https://+:443;http://+:80"
+      },
       "publishAllPorts": true,
       "useSSL": true
     }
@@ -31,8 +34,8 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:8962",
-      "sslPort": 44372
+      "applicationUrl": "http://localhost:20998",
+      "sslPort": 44359
     }
   }
 }
